@@ -1,0 +1,107 @@
+@use '../abastracts/' as *;
+
+// font-family: 'Fraunces', serif;
+// font-family: 'Montserrat', sans-serif;
+
+// - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+// - Weights: 500, 700
+
+// - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+// - Weights: 700
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 500px;    
+    margin: 0 auto;
+    background-color: $container;
+}
+
+.card {
+    display: flex;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 250px;
+    padding: 1em 2em;
+
+    &__paragraph-perfume {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.7rem;
+        color: $paragraphs;
+        margin: 1em 0 0.3em 0;
+        text-align: justify;
+    }
+
+    &__main {
+        padding-right: 1em;
+        font-family: 'Fraunces', serif;
+        font-size: 24px;
+        font-weight: 700;
+        width: auto;
+        margin: 0.5em 0;
+    }
+
+    &__paragraph-description {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0.5em 0;
+        // font-size: 14px;
+        color: $paragraphs;
+        margin-bottom: 1em;
+    }
+}
+
+.image{
+    width: 60%;
+    grid-area: image;
+}
+
+.value {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    
+    span{
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $buttonAndValue;
+    }
+    span:nth-child(2){
+        color: $paragraphs;
+        font-size: 0.825rem;
+        text-decoration: line-through;
+    }
+}
+
+.button {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: $buttonAndValue;
+    color: white;
+
+    img {
+        position: absolute;
+        height: 5px;
+    }
+}
+
+// .button::before {
+//     content: '';
+
+// }
+
+
