@@ -86,22 +86,20 @@ body {
 }
 
 .button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 2em;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 0.5em;
     border: none;
     background-color: $buttonAndValue;
     color: white;
 
     img {
-        position: absolute;
-        height: 5px;
+        height: 12px;
+        padding-right: 0.5em;
     }
 }
-
-// .button::before {
-//     content: '';
-
-// }
-
-
