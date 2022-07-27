@@ -55,19 +55,19 @@ body {
   background-size: cover;
 }
 
-.value {
+.price {
   display: flex;
   justify-content: space-between;
   width: 80%;
   align-items: center;
 }
-.value span {
+.price span {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 700;
   color: hsl(158deg, 36%, 37%);
 }
-.value span:nth-child(2) {
+.price span:nth-child(2) {
   color: hsl(228deg, 12%, 48%);
   font-size: 0.825rem;
   text-decoration: line-through;
