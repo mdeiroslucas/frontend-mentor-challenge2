@@ -8,6 +8,8 @@ body {
   width: 500px;
   margin: 0 auto;
   background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1em;
+  overflow: hidden;
 }
 
 .card {
@@ -44,15 +46,13 @@ body {
   font-weight: 500;
   font-size: 1rem;
   margin: 0.5em 0;
+  line-height: 1.5em;
   color: hsl(228deg, 12%, 48%);
   margin-bottom: 1em;
 }
 
 .image {
-  width: 60%;
-  background-image: url("/images/image-product-desktop.jpg");
-  background-position: center;
-  background-size: cover;
+  width: 50%;
 }
 
 .price {
@@ -79,16 +79,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
   padding: 1em;
   border-radius: 0.5em;
   border: none;
   background-color: hsl(158deg, 36%, 37%);
   color: white;
+  font-weight: 700;
 }
 .button img {
   height: 12px;
-  padding-right: 0.5em;
+  padding-right: 1em;
 }
 
 .button:hover {
