@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .container {
     width: 500px;    
@@ -64,14 +65,18 @@ body {
 
 .image{
     width: 50%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .price {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     width: 80%;
     align-items: center;
+    margin: 0.5em 0;
     
     span{
         font-family: 'Fraunces', serif;
@@ -81,14 +86,15 @@ body {
     }
     span:nth-child(2){
         color: $paragraphs;
-        font-size: 0.825rem;
+        font-size: 1rem;
         text-decoration: line-through;
+        padding-left: 1.2em;
     }
 }
 
 .button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.875rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,6 +120,42 @@ body {
     background-color: $button-hover;
 }
 
+.attribution {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 500px) {
-    
+    .container{
+        margin: 1rem;
+        max-width: 25rem;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        grid-template-areas: 
+        "image"
+        "text"
+        "text"
+        ;
+    }
+
+    .text{
+        width: 100%;
+        grid-area: text;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        background-image: url(/images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: image;
+    }
+
 }
